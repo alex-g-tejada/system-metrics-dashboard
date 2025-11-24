@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>OpenTelemetry Metrics Dashboard</title>
+    <style>
+        body { font-family: Arial; margin: 20px; }
+        .metric { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <h1>System Metrics (via OpenTelemetry)</h1>
+    <div class="metric">CPU Usage: {{.CPUUsage}}%</div>
+    <div class="metric">Memory: {{.MemoryUsed}} MB / {{.MemoryTotal}} MB</div>
+    <div class="metric">Disk: {{.DiskUsed}} GB / {{.DiskTotal}} GB</div>
+</body>
+</html>
